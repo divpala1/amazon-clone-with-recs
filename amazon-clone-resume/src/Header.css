@@ -1,0 +1,72 @@
+.header {
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo {
+    width: 100px;
+    object-fit: contain; /* Maintains the aspect ratio */
+    margin: 18px 15px 0px 15px;
+}
+
+/* Search bar */
+.header__search {
+    display: flex;
+    flex: 1; /* Explanation: https://stackoverflow.com/a/37386525 */
+    align-items: center;
+}
+
+.header__searchInput {
+    height: 20px;
+    padding: 8px;
+    border: none;
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.header__searchIcon {
+    background-color: #cd9042;
+    padding: 7px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* Nav bar */
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+.header__option__lineOne {
+    font-size: 12px;
+}
+
+.header__option__lineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header__option__basket {
+    display: flex;
+    align-items: center;
+}
+
+.header__basketCount {
+    margin: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

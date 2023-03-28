@@ -1,0 +1,60 @@
+.orderedProduct {
+    display: flex;
+    margin: 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.orderedProduct__image {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+}
+
+.orderedProduct__info {
+    padding-left: 20px;
+    max-width: 750px;
+}
+
+.orderedProduct__title {
+    font-size: 20px;
+    font-weight: 480;
+}
+
+.orderedProduct__rating {
+    display: flex;
+}
+
+.orderedProduct__info > button {
+    height: 40px;
+    border-radius: 10px;
+    background: #f0c14b;
+    border: 1px solid gray;
+    margin-top: 10px;
+    color: #111;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.orderedProduct__price {
+    font-size: 20px;
+    text-align: end;
+    flex-grow: 1;
+}
+
+.orderedProduct__ratingSubmit {
+    height: 40px;
+    border-radius: 10px;
+    background: #f0c14b;
+    border: 1px solid gray;
+    margin-top: 10px;
+    color: #111;
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+}
+
+.orderedProduct__ratingSubmit :disabled, .orderedProduct__ratingSubmit[disabled] {
+    cursor: default;
+    background-color: rgb(130, 226, 34);
+}
